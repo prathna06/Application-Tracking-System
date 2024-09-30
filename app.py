@@ -15,6 +15,7 @@ def get_gemini_response(input,pdf_content,prompt):
     model= genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content([input,pdf_content[0],prompt])
     return response.text
+#fdgd
 
 def input_pdf_setup(uploaded_file):
     if uploaded_file is not None:
